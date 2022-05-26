@@ -1,4 +1,4 @@
-const Candy = require('./Candy'); 
+const Candy = require('./candy'); 
 
 describe('Candy', () => {
     const candy = new Candy('Mars', 2);
