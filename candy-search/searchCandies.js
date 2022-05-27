@@ -14,13 +14,9 @@ const candies = [
     { name: 'Fraise Tagada', price: 5.99 }
   ];
 
-    const searchCandies = (start, maxPrice) => candies 
+    const searchCandies = (prefix, maxPrice) => candies 
         .filter(candy => candy.price < maxPrice)
-        .filter(candy => candy.name.startsWith(start[0].toUpperCase()+start.substring(1)))
+        .filter(candy => candy.name.startsWith(prefix.toUpperCase()[0]+prefix.substring(1).toLowerCase()))
         .map(({name}) => name);
-
-        // could do with a method that capitalizes the first
-        // letter of every word, like in ruby, then could run toUpperCase and then 
-        // Capitalize to guard against weird inputs...
 
 module.exports = searchCandies;
