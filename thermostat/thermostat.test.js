@@ -55,7 +55,7 @@ describe('Thermostat', () => {
 
     it('If power saving mode is off, the maximum temperature is 32 degrees', () => {
         let thermostat = new Thermostat();
-        thermostat.switch_off_powersaver
+        thermostat.switch_off_powersaver()
         for(let i = 0; i < 20; i++) {
             thermostat.up()           
         }
@@ -71,7 +71,7 @@ describe('Thermostat', () => {
 
     it("details its current energy usage", () => {
         let thermostat = new Thermostat();
-        thermostat.switch_on_powersaver
+        thermostat.switch_off_powersaver()
         thermostat.down()
         thermostat.down()
         thermostat.down()

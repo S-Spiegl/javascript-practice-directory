@@ -13,7 +13,7 @@ describe('ShoppingBasket', () => {
     it('adds a candy to the basket', () => {
         let basket = new ShoppingBasket();
         basket.addItem(marsDouble);
-        expect(basket.basket[0].name).toBe(marsDouble.name);
+        expect(basket.contents[0].name).toBe(marsDouble.name);
     })
 
     it('gives a total', () => {

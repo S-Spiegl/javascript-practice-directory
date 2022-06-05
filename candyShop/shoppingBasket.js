@@ -1,11 +1,11 @@
 class ShoppingBasket {
     constructor() {
-        this.basket = [],
+        this.contents = [],
         this.discount = 0
     }
 
     addItem(item) {
-        this.basket.push(item)
+        this.contents.push(item)
     }
 
     applyDiscount(discount) {
@@ -14,7 +14,7 @@ class ShoppingBasket {
 
     getTotal() {
         let total = 0
-        this.basket.map((item) => (total+= item.price));
+        this.contents.map((item) => (total+= item.price));
         return total - this.discount 
     }
 }

@@ -5,9 +5,9 @@ class Thermostat {
     }
 
     up() {
-        if(this.powersaver = true && this.temp < 25){
+        if(this.powersaver === true && this.temp < 25){
             this.temp += 1}
-        else if(this.powersaver = false && this.temp < 32){
+        else if(this.powersaver === false && this.temp < 32){
             this.temp += 1}
     }
     // why does the if statement work but the else if not work?
